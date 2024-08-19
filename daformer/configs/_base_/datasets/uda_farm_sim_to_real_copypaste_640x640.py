@@ -11,6 +11,8 @@ sim_train_pipeline = [
          multiscale_mode='value',),
     dict(type='CopyPaste', crop_source='../dataset/building_crops', crop_extension='png',
          crop_label=5, max_pastes=2, prob=0.8, hflip_prob=0.5, over_layer_indices=[0, 1], activation_iter=400),
+    # if you want to run the training, make sure to download the building crops!
+    # if not, make sure to comment/remove this
     dict(type='RandomCrop', crop_size=crop_size, cat_max_ratio=0.8),
     dict(type='RandomFlip', prob=0.5),
     # dict(type='PhotoMetricDistortion'),  # is applied later in dacs.py

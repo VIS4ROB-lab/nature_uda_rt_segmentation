@@ -185,6 +185,11 @@ The output can be chosen from the following options:
     ```
     Replace/Modify the config file as demanded. You may check the original implementation of DAFormer for details.
     By default, the checkpoints are saved in `./work_dirs/local-basic/` with an experiment-specific directory.
+
+    Note that we applied CopyPaste augmentation to introduce additional building class samples to the training. 
+    Please download the building crop dataset additionally for reproduction.
+    The default path (defined in DAFormer dataset configurations): `./dataset/building_crops`.
+
 - Evaluate results. Evaluations are conducted in either whole images or crops.
   - For whole image evaluation (**Kastelhof Farm**), run the following command and replace your own parameters in the square brackets:
       ```bash

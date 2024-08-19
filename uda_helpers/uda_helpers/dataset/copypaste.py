@@ -181,11 +181,4 @@ class CopyPasteAug(object):
 
 if __name__ == "__main__":
     # For debug purposes
-    augmentor = CopyPasteAug(crop_source='./dataset/building_crops',
-                             activation_iter=0, over_layer_indices=[0, 1], keep_asp_ratio_prob=1.)
-    img = mmcv.imread('/srv/dataset/Apple_Farm_Sim_summer/images/validation/summer_2218.jpg')
-    gt_sem_seg = mmcv.imread('/srv/dataset/Apple_Farm_Sim_summer/annotations/validation/summer_2218.png', 'unchanged')
-    results = augmentor({"img": img, "gt_semantic_seg": gt_sem_seg})
-    # print(np.alltrue(results["img"] == img))
-    mmcv.imwrite(results["img"], 'out.jpg')
-    mmcv.imwrite(results["gt_semantic_seg"], 'out_semantics.png')
+    pass
