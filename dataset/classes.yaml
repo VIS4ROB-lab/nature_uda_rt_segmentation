@@ -1,0 +1,41 @@
+classes:
+  unlabeled: 255
+  sky: 0
+  terrain: 1
+  low-vegetation: 2
+  trunk: 3
+  canopy: 4
+  building: 5
+  others: 6 # fences = others
+
+palettes:
+  unlabeled: [0, 0, 0]
+  sky: [60, 112, 164]
+  terrain: [152,251,152]
+  low-vegetation: [147, 217, 163]
+  trunk: [194, 118, 100]
+  canopy: [97, 135, 110]
+  building: [244, 242, 222]
+  others: [250, 170, 30]
+
+sem_map:
+  real_world_mapping:
+    10: 1
+    20: 2
+    30: 3
+    40: 4
+    50: 0
+    60: 5
+    70: 6
+    0: 255
+
+  merge_mapping:
+    0: 0
+    1: 1
+    2: 2
+    3: 3
+    4: 3
+    5: 4
+    6: 5
+    255: 255
+
