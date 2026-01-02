@@ -23,7 +23,7 @@ compared to the DAFormer while only demanding 1/15 of the latter's inference tim
 
 <img src="./resources/pipeline.png" alt="pipeline" width="60%" height="auto">
 
-This repository contains the code for this project. For more information on our work, please refer to the [paper](https://www.research-collection.ethz.ch/handle/20.500.11850/693952).
+This repository contains the code for this project. For more information on our work, please refer to the [paper](https://doi.org/10.3929/ethz-b-000693952).
 
 If you find this work useful in your research, please consider citing:
 ```
